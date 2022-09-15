@@ -1,0 +1,186 @@
+:root {
+  --text-base: #afb6c2;
+  --text-title: #d4ccb6;
+  --background: #191816;
+  --form-background: #24221f;
+  --primary-color: #ffc632;
+
+  --ff--primary: "Roboto", sans-serif;
+  --ff--accent: 'Poppins', sans-serif;
+  
+  --clr-neutral-100: #fff;
+  --clr-neutral-500: #868686;
+  --clr-neutral-900: #000;
+
+  --clr-icon: var(--clr-neutral-500);
+}
+
+*, *::before, *::after {
+  box-sizing: border-box;
+  text-decoration: none;
+}
+
+body {
+  font-family: var(--ff--accent);
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 1.6;
+  background-color: var(--background);
+  overflow: hidden;
+}
+
+
+.flex-wrapper {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+body, h1, h2, p { margin: 0; }
+
+.right-div {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-content: space-around;
+  gap: 2rem;
+  margin-inline: 2rem;
+}
+
+.form-group {
+  background-color: var(--form-background);
+  max-width: 38rem;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  gap: 1rem;
+  padding: 4rem 8rem;
+}
+
+.form-group > * {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: .8rem;
+}
+
+.primary-header {
+  margin: 2rem 0;
+}
+
+
+h2 {
+  font-family: var(--ff--accent);
+  font-size: 24px;
+  font-weight: 600;
+  color: var(--text-title);
+}
+
+label{
+  color: var(--text-base);
+  font-family: var(--ff--accent);
+  font-size: 16px;
+  font-weight: 500;
+}
+
+header p {
+  font-family: var(--ff--primary);
+  font-size: 16px;
+  font-weight: 500 ;
+  color: var(--text-base);
+}
+
+
+.caixa label {
+  font-family: var(--ff--primary);
+  font-size: 16px;
+  font-weight: 400;
+  color: var(--text-base);
+}
+
+.split h2, input {
+  color: var(--text-base);
+}
+
+.Esqueci a, .roda-pe a {
+  font-family: var(--ff--accent);
+  font-size: 14px;
+  font-weight: 600;
+  color: var(--primary-color);
+}
+.roda-pe a { font-weight: 400; }
+
+.form-remember{
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+}
+
+button{
+  background-color: var(--primary-color);
+  border-radius: 4px;
+  color: #473404;
+  font-weight: 600;
+  text-transform: uppercase;
+  padding: 12px 24px;
+  cursor: pointer;
+}
+
+.input-group {
+  display: flex;
+  justify-content: space-between;
+  gap: .5rem;
+
+  max-width: 100%;
+
+  padding: .6rem;
+  
+  border: 1px solid var(--clr-neutral-500);
+  border-radius: .15rem;
+  color: var(--text-base);
+}
+
+/* Icons insite inputs */
+.input-group > input {
+  outline: none;
+  border: none;
+  background: transparent;
+  flex: 1;
+}
+
+.form-icon {
+  width: 1.5rem;
+  aspect-ratio: 1;
+}
+
+.input-group:focus-within {
+  border-color: var(--primary-color);
+  --clr-icon: var(--primary-color);
+}
+
+/* Remember me box */
+.caixa {
+  display: flex;
+  gap: .5rem;
+  align-items: center;
+}
+
+/* Checkbox for Remember me */
+input[type="checkbox"] {
+  appearance: none;
+  background: transparent;
+  margin: 0;
+  width: 1rem;
+  aspect-ratio: 1;
+  border: .1rem solid var(--clr-neutral-500);
+  border-radius: .15rem;
+  cursor: pointer;
+}
+
+input[type="checkbox"]:checked {
+  appearance: auto;
+  accent-color: var(--primary-color);
+}
+
+aside > img { max-width: 80vh; }

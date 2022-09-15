@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="style.css">
+    
+    <title>Login Form</title>
+    
+</head>
+
+<body>
+    <div class="flex-wrapper">
+        <div class="right-div">
+            <header class="primary-header">
+                <img src="./assets/logo.svg" alt="icon camp.in">
+            </header>
+        
+            <main class="form-group">
+                <header class="form-header">
+                    <h2><img src="./assets/log-in.svg" alt="">Faça seu login</h2>
+                    <p>Entre com suas informações de cadastro.</p>
+                </header>
+        
+                <form action="">
+                    <section class="split">
+                        <label for="email">E-mail</label>
+                        <div class="input-group">
+                            <svg class="form-icon">
+                                <use xlink:href="assets/form-icons.svg#icon-mail"/>
+                            </svg>
+                            <input type="email" placeholder="Digite seu e-mail" autofocus id="email" name="email" autocomplete="off">
+                        </div>
+                    </section>
+        
+                    <section class="split">
+                        <label for="password">Senha</label>
+                        <div class="input-group">
+                            <svg class="form-icon">
+                                <use xlink:href="assets/form-icons.svg#icon-lock"/>
+                            </svg>
+                            <input type="password" placeholder="Digite sua senha" id="password" name="password">
+                            <svg class="form-icon">
+                                <use xlink:href="assets/form-icons.svg#icon-eye"/>
+                            </svg>
+                        </div>
+                    </section>
+        
+                    <section class="split">
+
+                        <div class="form-remember">
+                            <div class="caixa">
+                                <input type="checkbox" id="lembrar" name="lembrar">
+                                <label for="lembrar">Lembre-me</label>
+                            </div>
+
+                            <div class="Esqueci">
+                                <a href="#">Esqueci minha senha</a>
+                            </div>
+                        </div>
+                    </section>
+        
+                    <button>Entrar</button>
+                </form>
+                
+                <div class="roda-pe">
+                    <a href="">Não tem uma conta? <strong>Registre-se</strong></a>
+                </div>
+            </main>
+        </div>
+    
+        <aside>
+            <img src="assets/side-image-2x.jpg" alt="Car with a tent on top in front of a lake with mountains on the background" draggable="false">
+        </aside>
+    </div>
+</body>
+</html>
